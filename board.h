@@ -24,7 +24,6 @@ class board {
     private:
 
         char output [5] [8];
-        int columnFull [8] = {0,0,0,0,0,0,0,0};
         int playerTurn = 1;
 
 };
