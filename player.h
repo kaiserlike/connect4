@@ -1,30 +1,37 @@
 #ifndef PLAYER_H_INCLUDED
 #define PLAYER_H_INCLUDED
 
+#include <string>
+#include <iostream>
+
 using namespace std;
 
 class player {
 
-    public:
-        player (string name);  //constructor
-        int column;
+public:
+    player (int playerNumber);  //constructor
+     void getPlayer();
+    int playerNumber;
+    ~player();
+
+
+
+
 
 };
 
-class HumanPlayer : public player {
+class HumanPlayer : public player {     //subclass humanplayer
 
-    public:
-        HumanPlayer (string name);  //constructor
+public:
+    ~HumanPlayer();
 
 
 };
 
-class ComputerPlayer : public player {
+class ComputerPlayer : public player {      //subclass computerplayer
 
-    public:
-        ComputerPlayer (string name);  //constructor
-    private:
-        int algorithm();
+private:
+    int algorithm();
 
 };
 
