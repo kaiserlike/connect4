@@ -21,13 +21,15 @@ int main()
                     Spielfeld.playerTurn=1;         //player1 ist dran
                     while(Spielfeld.win != 1 || Spielfeld.win != 2 || Spielfeld.draw !=40){     //solange niemand gewonnen oder unentschieden ist wird weiter gespielt
                         Spielfeld.printBoard();     //Spielfeld wird geprintet
-                        if (Spielfeld.playerTurn==1){       // spieler der an der reihe ist wird ausgegeben
-                            player1.getPlayer();
+                        if (Spielfeld.playerTurn==1){
+                            player1.checkTurn();            //Eingabe der Spalte in der Münze eingeworfen wird
+                            Spielfeld.turn(player1.column);   //zug wird durchgeführt
                         }else if(Spielfeld.playerTurn==2){
-                            player2.getPlayer();
+                            player2.checkTurn();
+                            Spielfeld.turn(player2.column);
                         }
-                        Spielfeld.checkTurn();      //Eingabe der Spalte in der Münze eingeworfen wird
-                        Spielfeld.turn(Spielfeld.column);   //zug wird durchgeführt
+
+
                         if(Spielfeld.win==1 || Spielfeld.win==2 || Spielfeld.draw==40){ //nochmals abchecken ob jemand gewonnen hat oder ein unentschieden ist
                             break;
                         }

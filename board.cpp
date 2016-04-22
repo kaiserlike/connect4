@@ -48,7 +48,7 @@ void board::turn(int column){       //spielzug
                 }
             }
         }
-        checkWin();     //überprüfung ob gewonnen od unentschieden
+        checkWin(column);     //überprüfung ob gewonnen od unentschieden
         if(win ==1){
             printBoard();
             cout << "player 1 has won!!!" << endl << endl;
@@ -77,13 +77,9 @@ void board::info(){                     //hauptmenü text
     cout << "press 0 to quit" << endl;
 }
 
-void board::checkTurn(){                //aufforderung spalte zu wählen -> wird eingelesen und übergeben
-    cout << "Choose a column to insert coin: ";
-    cin >> column;
-    cout << endl;
-}
 
-void board::checkWin(){
+
+void board::checkWin(int column){
     int connect4;               //variable zum zählen der münzen nacheinander (waagrecht, senkrecht und diagonal)
     connect4=0;
     win=0;

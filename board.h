@@ -17,11 +17,11 @@ class board {
         void info();
         void printBoard();
         void turn(int column);
-        void checkWin();
-        void checkTurn();
+        void checkWin(int column);
+
         void refreshBoard();
 
-        int column;     //variable für gewählte spalte
+
         int playerTurn = 1;     //variable für spieler der an der reihe ist
         int currentCoin=0;      //variable für position der zuletzt eingeworfenen münze
         int win=0;          // ob bzw wer gewonnen hat 1=spieler1, 2=spieler2

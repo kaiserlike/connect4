@@ -9,7 +9,10 @@ player::player(int playerNr){       //player erzeugen mit spielernummer
 
 player::~player(){}
 
-void player::getPlayer(){       //gibt spieler aus
-    cout << "Player " << playerNumber << ": ";
-}
 
+
+void player::checkTurn(){                //aufforderung spalte zu wählen -> wird eingelesen und übergeben
+    cout << "Player " << playerNumber << ": " << "Choose a column to insert coin: ";
+    cin >> column;
+    cout << endl;
+}

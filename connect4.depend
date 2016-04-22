@@ -1,8 +1,8 @@
 # depslib dependency file v1.0
-1461353351 source:e:\dokumente\fh technikum\2.semester\github\connect4\board.cpp
+1461354694 source:e:\dokumente\fh technikum\2.semester\github\connect4\board.cpp
 	"board.h"
 
-1461353595 e:\dokumente\fh technikum\2.semester\github\connect4\board.h
+1461354694 e:\dokumente\fh technikum\2.semester\github\connect4\board.h
 	<iostream>
 	<string>
 
@@ -12,10 +12,10 @@
 	"board.h"
 	"player.h"
 
-1461353389 source:e:\dokumente\fh technikum\2.semester\github\connect4\player.cpp
+1461355040 source:e:\dokumente\fh technikum\2.semester\github\connect4\player.cpp
 	"player.h"
 
-1461353444 e:\dokumente\fh technikum\2.semester\github\connect4\player.h
+1461355040 e:\dokumente\fh technikum\2.semester\github\connect4\player.h
 	<string>
 	<iostream>
 

@@ -10,14 +10,12 @@ class player {
 
 public:
     player (int playerNumber);  //constructor
-     void getPlayer();
-    int playerNumber;
     ~player();
+    void checkTurn();
+    int column;     //variable für gewählte spalte
 
-
-
-
-
+private:
+    int playerNumber;
 };
 
 class HumanPlayer : public player {     //subclass humanplayer
