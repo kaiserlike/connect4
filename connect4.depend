@@ -19,3 +19,24 @@
 	<string>
 	<iostream>
 
+1461393212 source:/Users/Layana/GitHub/connect4/board.cpp
+	"board.h"
+
+1461574850 /Users/Layana/GitHub/connect4/board.h
+	<iostream>
+	<string>
+
+1461576549 source:/Users/Layana/GitHub/connect4/connect4.cpp
+	<iostream>
+	<string>
+	"board.h"
+	"player.h"
+
+1461576747 /Users/Layana/GitHub/connect4/player.h
+	<string>
+	<iostream>
+	"board.h"
+
+1461575588 source:/Users/Layana/GitHub/connect4/player.cpp
+	"player.h"
+

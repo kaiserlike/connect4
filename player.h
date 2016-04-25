@@ -3,6 +3,7 @@
 
 #include <string>
 #include <iostream>
+//#include "board.h"
 
 using namespace std;
 
@@ -13,6 +14,7 @@ public:
     ~player();
     void checkTurn();
     int column;     //variable für gewählte spalte
+    void playTurn();        //sollte eigentlich in CP sein
 
 private:
     int playerNumber;
@@ -28,8 +30,18 @@ public:
 
 class ComputerPlayer : public player {      //subclass computerplayer
 
+public:
+    int lastPlayed;
+    int opLastPlayed;
+    char ownCoin, opCoin;
+
 private:
-    int algorithm();
+    //int algorithm();
+    //void playTurn(char array[][]);
+    int checkBest();
+    int checkLoss();
+
+
 
 };
 
